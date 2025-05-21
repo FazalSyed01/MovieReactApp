@@ -10,6 +10,7 @@ import Home from "./Components/Home/Home";
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Signup/Login";
 import ProtectedRoute from "./Components/ProtectedRoutes/ProtectedRoutes";
+import EditMovie from "./Components/EditMovie/EditMovie";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/edit/:id" element={<EditMovie />} />
         </Route>
       </Routes>
     </Router>

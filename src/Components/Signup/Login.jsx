@@ -17,7 +17,7 @@ function Login() {
     setError('');
     setSuccess('');
     try {
-      const response = await fetch('https://localhost:7002/login', {
+      const response = await fetch('https://localhost:7002/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
